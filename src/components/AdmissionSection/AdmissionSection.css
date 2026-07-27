@@ -1,0 +1,195 @@
+/*==================================
+        ADMISSION SECTION
+==================================*/
+
+.admission-section {
+    padding: 100px 0;
+    background: #f8faf8;
+}
+
+.admission-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/*==================================
+        IMAGE
+==================================*/
+
+.admission-image {
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.admission-image img {
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+.admission-image:hover img {
+    transform: scale(1.08);
+}
+
+/*==================================
+        CONTENT
+==================================*/
+
+.section-subtitle {
+    display: inline-block;
+    color: #d4a017;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.admission-content h2 {
+    font-size: 42px;
+    color: #123524;
+    margin-bottom: 20px;
+}
+
+.admission-content p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+/*==================================
+        INFO CARDS
+==================================*/
+
+.admission-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.info-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.info-card h3 {
+    color: #123524;
+    margin-bottom: 18px;
+    font-size: 22px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.info-item svg {
+    color: #d4a017;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+/*==================================
+        BUTTONS
+==================================*/
+
+.admission-buttons {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 15px 32px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: #123524;
+    color: #fff;
+}
+
+.primary-btn:hover {
+    background: #d4a017;
+    transform: translateY(-3px);
+}
+
+.secondary-btn {
+    background: transparent;
+    color: #123524;
+    border: 2px solid #123524;
+}
+
+.secondary-btn:hover {
+    background: #123524;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/*==================================
+        RESPONSIVE
+==================================*/
+
+@media (max-width: 992px) {
+
+    .admission-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .admission-content h2 {
+        font-size: 36px;
+    }
+
+    .admission-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .admission-section {
+        padding: 70px 0;
+    }
+
+    .admission-content h2 {
+        font-size: 30px;
+    }
+
+    .admission-buttons {
+        flex-direction: column;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .admission-content h2 {
+        font-size: 26px;
+    }
+
+    .info-card {
+        padding: 20px;
+    }
+
+}

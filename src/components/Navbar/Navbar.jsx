@@ -78,9 +78,39 @@ function Navbar() {
 
           </div>
 
-          <NavLink to="/admissions" onClick={closeMenu}>
-            Admissions
-          </NavLink>
+          {/* Admissions Dropdown */}
+          <div className="dropdown">
+
+            <div className="dropdown-title">
+              Admissions <FaChevronDown className="dropdown-icon" />
+            </div>
+
+            <div className="dropdown-menu">
+
+              <NavLink
+                to="/admissions"
+                onClick={closeMenu}
+              >
+                Admission Overview
+              </NavLink>
+
+              <NavLink
+                to="/admissions/enquiry"
+                onClick={closeMenu}
+              >
+                Admission Enquiry
+              </NavLink>
+
+              <NavLink
+                to="/admissions/procedure"
+                onClick={closeMenu}
+              >
+                Admission Procedure
+              </NavLink>
+
+            </div>
+
+          </div>
 
           <NavLink to="/gallery" onClick={closeMenu}>
             Gallery
