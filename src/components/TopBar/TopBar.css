@@ -1,13 +1,14 @@
 .topbar {
-  background: #0b5d3b;
-  color: white;
-  padding: 8px 0;
+  background: #123524;
+  color: #fff;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .topbar-container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 30px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
 
   display: flex;
   justify-content: space-between;
@@ -18,23 +19,53 @@
 .topbar-right {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 .topbar a {
-  color: white;
+  color: #fff;
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 14px;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.topbar a svg {
+  font-size: 16px;
+  color: #d4a017;
+}
+
+.topbar a:hover {
+  color: #d4a017;
 }
 
 .topbar-right a {
-  transition: 0.3s;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .topbar-right a:hover {
-  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 992px) {
+
+  .topbar-container {
+    padding: 0 20px;
+  }
+
+  .topbar-left {
+    gap: 20px;
+  }
+
 }
 
 @media (max-width: 768px) {

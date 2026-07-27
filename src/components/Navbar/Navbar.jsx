@@ -41,7 +41,7 @@ function Navbar() {
           <div className="dropdown">
 
             <div className="dropdown-title">
-              Academics <FaChevronDown className="dropdown-icon" />
+              <span>Academics</span> <FaChevronDown className="dropdown-icon" />
             </div>
 
             <div className="dropdown-menu">
