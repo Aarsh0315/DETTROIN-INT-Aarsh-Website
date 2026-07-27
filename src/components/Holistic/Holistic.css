@@ -1,0 +1,168 @@
+/* ===================== */
+
+.holistic{
+    padding:100px 0;
+    background:#fdf8ec;
+}
+
+/* ===================== */
+
+.holistic-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+}
+
+/* ===================== */
+
+.holistic-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.holistic-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/* ===================== */
+
+.holistic-image{
+
+    overflow:hidden;
+
+}
+
+.holistic-image img{
+
+    width:100%;
+    height:250px;
+
+    object-fit:cover;
+
+    transition:.4s;
+
+}
+
+.holistic-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* ===================== */
+
+.holistic-content{
+
+    padding:25px;
+
+}
+
+.holistic-content h3{
+
+    color:#123524;
+
+    font-size:26px;
+
+    margin-bottom:15px;
+
+}
+
+.holistic-content p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+/* ===================== */
+
+.holistic-content button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    border:none;
+
+    background:#123524;
+
+    color:#fff;
+
+    padding:12px 22px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.holistic-content button:hover{
+
+    background:#d4a017;
+
+}
+
+.holistic-content button svg{
+
+    transition:.3s;
+
+}
+
+.holistic-content button:hover svg{
+
+    transform:translateX(5px);
+
+}
+
+/* ===================== */
+
+@media(max-width:992px){
+
+.holistic-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.holistic{
+
+padding:70px 0;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.holistic-content h3{
+
+font-size:22px;
+
+}
+
+}

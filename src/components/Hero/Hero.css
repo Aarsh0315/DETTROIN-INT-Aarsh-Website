@@ -1,0 +1,141 @@
+.hero{
+    position:relative;
+    height:calc(100vh - 90px);
+    overflow:hidden;
+}
+
+.hero-image{
+    position:absolute;
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+    object-position:center right;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(
+        90deg,
+        rgba(0,0,0,.88) 0%,
+        rgba(0,0,0,.75) 35%,
+        rgba(0,0,0,.45) 60%,
+        rgba(0,0,0,.15) 80%,
+        rgba(0,0,0,0) 100%
+    );
+}
+
+.hero-container{
+    position:relative;
+    z-index:5;
+
+    width:1200px;
+    max-width:90%;
+    height:100%;
+
+    margin:auto;
+
+    display:flex;
+    align-items:center;
+}
+
+.hero-content{
+    width:560px;
+    color:white;
+}
+
+.hero-subtitle{
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-size:16px;
+    margin-bottom:15px;
+}
+
+.hero-line{
+    width:70px;
+    height:4px;
+    background:#f4b400;
+    margin-bottom:25px;
+    display:block;
+}
+
+.hero-title{
+    color:#fff !important;
+    font-size:72px;
+    font-weight:800;
+    line-height:1.1;
+}
+
+.hero-description{
+    font-size:20px;
+    line-height:1.7;
+    margin-bottom:40px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    margin-bottom:45px;
+}
+
+.primary-btn,
+.secondary-btn{
+    padding:16px 34px;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.primary-btn{
+    background:#0b5d3b;
+    color:white;
+    border:none;
+}
+
+.secondary-btn{
+    background:transparent;
+    border:2px solid white;
+    color:white;
+}
+
+.hero-dots{
+    display:flex;
+    gap:12px;
+}
+
+.dot{
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    border:none;
+    background:#bdbdbd;
+}
+
+.active-dot{
+    background:#f4b400;
+}
+
+.slider-arrow{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    border:none;
+    background:white;
+    cursor:pointer;
+    z-index:100;
+}
+
+.left-arrow{
+    left:40px;
+}
+
+.right-arrow{
+    right:40px;
+}

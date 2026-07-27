@@ -1,0 +1,131 @@
+/* ========================= */
+/* LEARNING ENVIRONMENT */
+/* ========================= */
+
+.learning{
+    background:#123524;
+    padding:80px 0;
+}
+
+.learning-container{
+    width:1200px;
+    max-width:90%;
+    margin:auto;
+}
+
+.learning .section-subtitle{
+
+    color:#d4a017;
+    font-size:17px;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+
+}
+
+.learning h2{
+
+    color:#fff;
+    font-size:42px;
+    margin:15px 0 20px;
+
+}
+
+.learning-text{
+
+    color:#ddd;
+    font-size:18px;
+    line-height:1.8;
+    max-width:700px;
+    margin-bottom:35px;
+
+}
+
+/*===========================*/
+
+.learning-points{
+
+    display:grid;
+    grid-template-columns:repeat(2,max-content);
+    gap:18px 60px;
+
+    margin-bottom:35px;
+
+}
+
+.point{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    color:#fff;
+    font-size:18px;
+    font-weight:500;
+
+}
+
+.point svg{
+
+    color:#d4a017;
+    font-size:20px;
+
+}
+
+.learning-bottom{
+
+    color:#ddd;
+    font-size:17px;
+    line-height:1.8;
+    max-width:700px;
+
+}
+
+/*===========================*/
+
+@media(max-width:768px){
+
+.learning{
+
+padding:60px 0;
+
+}
+
+.learning h2{
+
+font-size:32px;
+
+}
+
+.learning-points{
+
+grid-template-columns:1fr;
+
+gap:18px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.learning h2{
+
+font-size:28px;
+
+}
+
+.learning-text,
+.learning-bottom{
+
+font-size:16px;
+
+}
+
+.point{
+
+font-size:16px;
+
+}
+
+}

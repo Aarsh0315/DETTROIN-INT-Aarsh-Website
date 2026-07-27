@@ -1,7 +1,8 @@
-import { NavLink } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
+import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
 import "./Navbar.css";
+import logo from "../../assets/images/logo.png";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,18 +11,19 @@ function Navbar() {
 
   return (
     <header className="navbar">
-      <div className="container navbar-container">
+      <div className="navbar-container">
 
         {/* Logo */}
-        <NavLink to="/" className="logo" onClick={closeMenu}>
+        <NavLink
+          to="/"
+          className="logo"
+          onClick={closeMenu}
+        >
           <img
-            src="https://placehold.co/60x60"
-            alt="School Logo"
+            src={logo}
+            alt="Excellence International School"
+            className="school-logo"
           />
-          <div>
-            <h2>Excellence International School</h2>
-            <span>Learn • Lead • Inspire</span>
-          </div>
         </NavLink>
 
         {/* Navigation */}
@@ -35,9 +37,46 @@ function Navbar() {
             About
           </NavLink>
 
-          <NavLink to="/academics" onClick={closeMenu}>
-            Academics
-          </NavLink>
+          {/* Academics Dropdown */}
+          <div className="dropdown">
+
+            <div className="dropdown-title">
+              Academics <FaChevronDown className="dropdown-icon" />
+            </div>
+
+            <div className="dropdown-menu">
+
+              <NavLink
+                to="/academics/pre-primary"
+                onClick={closeMenu}
+              >
+                Pre Primary School
+              </NavLink>
+
+              <NavLink
+                to="/academics/primary"
+                onClick={closeMenu}
+              >
+                Primary School
+              </NavLink>
+
+              <NavLink
+                to="/academics/middle"
+                onClick={closeMenu}
+              >
+                Middle School
+              </NavLink>
+
+              <NavLink
+                to="/academics/daycare"
+                onClick={closeMenu}
+              >
+                Day Care
+              </NavLink>
+
+            </div>
+
+          </div>
 
           <NavLink to="/admissions" onClick={closeMenu}>
             Admissions
@@ -51,9 +90,13 @@ function Navbar() {
             Contact
           </NavLink>
 
-          <button className="admission-btn">
+          <NavLink
+            to="/admissions"
+            className="admission-btn"
+            onClick={closeMenu}
+          >
             Apply Now
-          </button>
+          </NavLink>
 
         </nav>
 
@@ -62,7 +105,7 @@ function Navbar() {
           className="menu-btn"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          <FaBars />
+          {menuOpen ? <FaTimes /> : <FaBars />}
         </button>
 
       </div>

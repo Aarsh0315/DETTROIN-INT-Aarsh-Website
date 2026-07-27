@@ -1,0 +1,207 @@
+/* ========================= */
+/* ACADEMICS */
+/* ========================= */
+
+.academics {
+  padding: 100px 0;
+  background: #f8faf8;
+}
+
+.container {
+  width: 1200px;
+  max-width: 90%;
+  margin: auto;
+}
+
+/* ========================= */
+/* SECTION TITLE */
+/* ========================= */
+
+.section-title {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.section-title span {
+  color: #d4a017;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.section-title h2 {
+  font-size: 42px;
+  color: #123524;
+  margin: 15px 0;
+}
+
+.section-title p {
+  color: #666;
+  line-height: 1.8;
+}
+
+/* ========================= */
+/* GRID */
+/* ========================= */
+
+.academics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+}
+
+/* ========================= */
+/* CARD */
+/* ========================= */
+
+.academic-card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,.08);
+  transition: .35s ease;
+}
+
+.academic-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0,0,0,.12);
+}
+
+/* ========================= */
+/* IMAGE */
+/* ========================= */
+
+.academic-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: .4s;
+}
+
+.academic-card:hover img {
+  transform: scale(1.08);
+}
+
+/* ========================= */
+/* CONTENT */
+/* ========================= */
+
+.academic-content {
+  padding: 25px;
+}
+
+.academic-content small {
+  color: #d4a017;
+  font-weight: 600;
+}
+
+.academic-content h3 {
+  margin: 10px 0;
+  font-size: 28px;
+  color: #123524;
+}
+
+.academic-content p {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* ========================= */
+/* FEATURES */
+/* ========================= */
+
+.academic-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px;
+}
+
+.academic-content li {
+  margin-bottom: 10px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ========================= */
+/* BUTTON */
+/* ========================= */
+
+.academic-content button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  border: none;
+  outline: none;
+
+  padding: 13px 24px;
+
+  border-radius: 50px;
+
+  background: #0b5d3b;
+  color: white;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.academic-content button:hover {
+  background: #d4a017;
+}
+
+.academic-content button svg {
+  transition: .3s;
+}
+
+.academic-content button:hover svg {
+  transform: translateX(5px);
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 992px) {
+
+  .academics-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .academics {
+    padding: 70px 0;
+  }
+
+  .section-title h2 {
+    font-size: 34px;
+  }
+
+  .academic-card img {
+    height: 220px;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .section-title h2 {
+    font-size: 28px;
+  }
+
+  .academic-content {
+    padding: 20px;
+  }
+
+  .academic-content h3 {
+    font-size: 24px;
+  }
+
+}
