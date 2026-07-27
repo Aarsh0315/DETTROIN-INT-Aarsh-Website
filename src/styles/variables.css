@@ -1,0 +1,30 @@
+:root {
+  /* Colors */
+  --primary-color: #0b5d3b;
+  --secondary-color: #f4b400;
+  --accent-color: #1a73e8;
+
+  --white: #ffffff;
+  --black: #222222;
+
+  --text-color: #444444;
+  --heading-color: #1f2937;
+
+  --light-bg: #f8f9fa;
+  --border-color: #e5e7eb;
+
+  /* Typography */
+  --font-family: "Poppins", sans-serif;
+
+  /* Container */
+  --container-width: 1200px;
+
+  /* Radius */
+  --border-radius: 10px;
+
+  /* Shadow */
+  --box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+  /* Transition */
+  --transition: 0.3s ease;
+}

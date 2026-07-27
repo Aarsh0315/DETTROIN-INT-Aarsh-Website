@@ -1,0 +1,44 @@
+.topbar {
+  background: #0b5d3b;
+  color: white;
+  padding: 8px 0;
+}
+
+.topbar-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar-left,
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.topbar a {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.topbar-right a {
+  transition: 0.3s;
+}
+
+.topbar-right a:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .topbar {
+    display: none;
+  }
+}
