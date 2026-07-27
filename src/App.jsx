@@ -11,6 +11,7 @@ import Middle from "./pages/Academics/Middle";
 import Daycare from "./pages/Academics/Daycare";
 import Enquiry from "./pages/Admissions/Enquiry";
 import Procedure from "./pages/Admissions/Procedure";
+import Blog from "./pages/Blog/Blog";
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
       <Route path="/admissions/procedure" element={<Procedure />} />  
 
       <Route path="/gallery" element={<Gallery />} />
+
+      <Route path="/blog" element={<Blog />} />
 
       <Route path="/contact" element={<Contact />} />
 

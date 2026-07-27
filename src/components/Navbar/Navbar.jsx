@@ -116,6 +116,10 @@ function Navbar() {
             Gallery
           </NavLink>
 
+          <NavLink to="/blog" onClick={closeMenu}>
+            Blog
+          </NavLink>
+
           <NavLink to="/contact" onClick={closeMenu}>
             Contact
           </NavLink>
