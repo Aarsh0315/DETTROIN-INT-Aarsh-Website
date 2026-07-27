@@ -1,16 +1,103 @@
-# React + Vite
+# Excellence International School Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 👤 Full Name
+Aarsh Vanjari
 
-Currently, two official plugins are available:
+## 🆔 Intern ID
+<Your Intern ID>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📧 Email Address
+<Your Email Address>
 
-## React Compiler
+## 💻 GitHub Username
+Aarsh0315
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🌐 Selected Website
+Excellence International School
 
-## Expanding the ESLint configuration
+## 🚀 Live Demo
+https://dettroin-int-aarsh-website.vercel.app/
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 GitHub Repository
+<Your GitHub Repository Link>
+
+---
+
+# 📖 Project Overview
+
+This project is a modern and responsive redesign of the Excellence International School website developed as part of the Dettro Internship Assignment. The website provides an engaging user experience with a clean interface, reusable React components, and responsive layouts across all devices.
+
+---
+
+# 🛠️ Technologies Used
+
+- React.js
+- Vite
+- React Router DOM
+- CSS3
+- JavaScript (ES6+)
+- React Icons
+- Git & GitHub
+- Vercel
+
+---
+
+# ✨ Key Improvements Made
+
+- Redesigned the complete user interface with a modern and responsive layout.
+- Built reusable React components for better code organization.
+- Implemented responsive navigation with dropdown menus.
+- Created dedicated pages for:
+  - Home
+  - About
+  - Academics
+  - Admissions
+  - Admission Enquiry
+  - Admission Procedure
+  - Gallery
+  - Blog
+  - Contact
+- Added a professional footer with contact information and quick links.
+- Improved typography, spacing, and color consistency across the website.
+- Designed responsive cards and layouts for desktop, tablet, and mobile devices.
+- Deployed the project on Vercel for live access.
+
+---
+
+# 📱 Features
+
+- Responsive Design
+- Modern UI/UX
+- Reusable Components
+- React Router Navigation
+- Dropdown Menus
+- Professional Footer
+- Responsive Admission Enquiry Form
+- Optimized Layout
+- Cross-Device Compatibility
+
+---
+
+# ⚙️ Installation
+
+```bash
+git clone <your-github-repository-link>
+
+cd <repository-name>
+
+npm install
+
+npm run dev
+```
+
+---
+
+# 🌍 Live Website
+
+https://dettroin-int-aarsh-website.vercel.app/
+
+---
+
+# 📄 License
+
+This project was developed as part of the **Dettro Internship Assignment**.
