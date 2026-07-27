@@ -4,10 +4,10 @@
 Aarsh Vanjari
 
 ## 🆔 Intern ID
-<Your Intern ID>
+NA
 
 ## 📧 Email Address
-<Your Email Address>
+aarshvanjari1@gmail.com
 
 ## 💻 GitHub Username
 Aarsh0315
@@ -19,7 +19,7 @@ Excellence International School
 https://dettroin-int-aarsh-website.vercel.app/
 
 ## 📂 GitHub Repository
-<Your GitHub Repository Link>
+[<Your GitHub Repository Link>](https://github.com/Aarsh0315/DETTROIN-INT-Aarsh-Website)
 
 ---
 
